@@ -52,7 +52,6 @@ header{
     border-radius: 999px;
     padding: 10px 28px;
     transition: 0.3s;
-    
 }
 
 .menu a:hover{
@@ -60,35 +59,34 @@ header{
     color: #2D963D;
 }
 
-
-
-.banner {
+.banner{
     display: flex;
     justify-content: center; 
     align-items: center;            
 }
 
-.banner img {
+.banner img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .banner h1{
     position: absolute;
     color: white;
     font-size: 80px;
     font-weight: 700;
-    margin-right:200px;
+    margin-right: 200px;
     margin-top: -450px;
-     
 }
+
 .banner h1 span{
     position: absolute;
     color: #FFDE21;
     font-size: 80px;
     font-weight: 700;
-    
 }
+
 .banner p{
     position: absolute;
     color: white;
@@ -102,7 +100,6 @@ header{
     display: flex;
 }
 
-
 .brasil{
     display: flex;
     flex-direction: column;
@@ -115,18 +112,20 @@ header{
     margin-top: 30px;
     border-radius: 20px;
 }
+
 .brasil img{
     width: 200px;
     margin-top: 40px;
 }
+
 .brasil h3{
     color: #FFDE21;
     font-size: 50px;
     font-weight: 700;
 }
+
 .brasil button{
     background-color: #005C2A;
-    
     font-size: 20px;
     font-weight: 600;
     border: none;
@@ -135,7 +134,7 @@ header{
     transition: 0.3s;
 }
 
-.brasil button a {
+.brasil button a{
     color: #FFDE21;
     font-size: 40px;
 }
@@ -143,25 +142,24 @@ header{
 .brasil button:hover{
     background-color: #FFDE21;
 }
+
 .brasil button:hover a{
     color: white;
 }
-
-
 
 .japao{
     display: flex;
     flex-direction: column;
     gap: 12px;
-    background: linear-gradient(180deg, #FFFFFF 0%, #E8E4E4  50%, #D45C5C 75%, #C12929 100%);
+    background: linear-gradient(180deg, #FFFFFF 0%, #E8E4E4 50%, #D45C5C 75%, #C12929 100%);
     width: 600px;
     height: 500px;
     align-items: center;
     margin-right: 20px;
     margin-top: 30px;
     border-radius: 20px;
-    
 }
+
 .japao img{
     width: 400px;
     margin-top: 40px;
@@ -183,18 +181,18 @@ header{
     transition: 0.3s;
 }
 
-.japao button a {
+.japao button a{
     color: white;
     font-size: 40px;
 }
+
 .japao button:hover{
     background-color: white;
 }
+
 .japao button:hover a{
     color: #C90000;
 }
-
-
 
 h2{
     color: #2D963D;
@@ -228,31 +226,31 @@ h2{
     margin-left: 650px;
 }
 
-
-
 footer{
     background-color: #2D963D;
     margin-top: 60px;
     display: flex;
 }
 
-footer img {
+footer img{
     display: flex;
 }
+
 footer p{
     color: white;
     font-size: 40px;
     font-weight: 600;
     flex-direction: column;
     margin-top: 60px;
-
 }
+
 footer p span{
     font-size: 30px;
     font-weight: 700;
     color: #FFDE21;
     margin-top: 20px;
 }
+
 .copa{
     font-size: 20px;
     font-weight: 400;
@@ -260,17 +258,127 @@ footer p span{
     margin-left: -216px;
 }
 
+/* ================= TABLET ================= */
 
+@media (min-width: 769px) and (max-width: 1024px){
+
+    header{
+        height: auto;
+        padding: 20px 30px;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .logo{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .logo p{
+        font-size: 34px;
+    }
+
+    .menu{
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .menu a{
+        font-size: 17px;
+        padding: 9px 20px;
+    }
+
+    .banner{
+        position: relative;
+    }
+
+    .banner h1{
+        font-size: 60px;
+        margin: 0;
+        position: absolute;
+        top: 120px;
+        left: 40px;
+    }
+
+    .banner h1 span{
+        font-size: 60px;
+        position: static;
+    }
+
+    .banner p{
+        font-size: 22px;
+        margin: 0;
+        position: absolute;
+        top: 210px;
+        left: 40px;
+    }
+
+    .cards{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding-top: 30px;
+    }
+
+    .brasil,
+    .japao{
+        width: 90%;
+        height: auto;
+        margin: 0;
+        padding: 40px 20px;
+    }
+
+    .barra{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .barra span{
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    footer{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 25px;
+    }
+
+    footer p{
+        margin-top: 0;
+    }
+
+    .copa{
+        margin: 0;
+        width: 100%;
+    }
+}
 
 /* ================= CELULAR ================= */
+
 @media (max-width: 768px){
 
     header{
-        flex-direction: column;
         height: auto;
         padding: 20px;
-        gap: 20px;
-        
+        flex-direction: column;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .logo{
+        justify-content: center;
+    }
+
+    .logo img{
+        width: 34px;
     }
 
     .logo p{
@@ -279,14 +387,15 @@ footer p span{
 
     .menu{
         flex-direction: column;
-        gap: 15px;
         width: 100%;
+        gap: 12px;
     }
 
     .menu a{
         width: 100%;
         text-align: center;
-        font-size: 18px;
+        font-size: 17px;
+        padding: 10px 20px;
     }
 
     .banner{
@@ -294,33 +403,37 @@ footer p span{
     }
 
     .banner h1{
-        font-size: 40px;
+        font-size: 38px;
         margin: 0;
-        margin-top: 40px;
-        margin-left: 20px;
+        position: absolute;
+        top: 50px;
+        left: 20px;
     }
 
     .banner h1 span{
-        font-size: 40px;
-        padding-left: 100px;
+        font-size: 38px;
+        position: static;
     }
 
     .banner p{
         font-size: 16px;
         margin: 0;
-        top: 95px;
+        position: absolute;
+        top: 105px;
         left: 20px;
+        width: 85%;
     }
 
     .cards{
         flex-direction: column;
         align-items: center;
         gap: 20px;
+        padding: 20px;
     }
 
     .brasil,
     .japao{
-        width: 90%;
+        width: 100%;
         height: auto;
         margin: 0;
         padding: 30px 20px;
@@ -328,10 +441,12 @@ footer p span{
 
     .brasil img{
         width: 140px;
+        margin-top: 0;
     }
 
     .japao img{
         width: 220px;
+        margin-top: 0;
     }
 
     .brasil h3,
@@ -353,90 +468,33 @@ footer p span{
         width: 90%;
         height: 45px;
         margin: 20px auto;
-        position: relative;
     }
 
     .barra span{
         font-size: 24px;
-        margin-left: 0;
-        position: absolute;
-        right: 20px;
+        margin-left: auto;
+        margin-right: 15px;
     }
 
     footer{
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 20px;
+        padding: 25px 20px;
         gap: 10px;
     }
 
-    .copa{
-        margin: 0;
-    }
-}
-
-
-/* ================= TABLET ================= */
-@media (min-width: 769px) and (max-width: 1024px){
-
-    header{
-        padding: 0 30px;
+    footer p{
+        font-size: 28px;
+        margin-top: 0;
     }
 
-    .menu{
-        gap: 20px;
-    }
-
-    .menu a{
-        font-size: 16px;
-        padding: 10px 18px;
-    }
-
-    .banner h1{
-        font-size: 60px;
-        margin-right: 0;
-        margin-top: -250px;
-    }
-
-    .banner h1 span{
-        font-size: 60px;
-    }
-
-    .banner p{
+    footer p span{
         font-size: 22px;
-        margin-top: -180px;
-    }
-
-    .cards{
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-
-    .brasil,
-    .japao{
-        width: 90%;
-        margin: 0;
-    }
-
-    .barra{
-        width: 90%;
-    }
-
-    .barra span{
-        margin-left: auto;
-        margin-right: 20px;
-    }
-
-    footer{
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        padding: 20px;
     }
 
     .copa{
-        margin-left: 0;
+        font-size: 16px;
+        margin: 0;
     }
 }
