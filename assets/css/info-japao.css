@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: #FAEEEE;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+
+header{
+    width: 100%;
+    min-height: 110px;
+    background: #2D963D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 60px;
+    gap: 20px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img{
+    width: 40px;
+    max-width: 100%;
+}
+
+.logo p{
+    color: white;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu a{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid white;
+    border-radius: 999px;
+    padding: 10px 28px;
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    background-color: white;
+    color: #2D963D;
+}
+
+/* BANNER */
+
+main .banner{
+    width: 100%;
+    position: relative;
+}
+
+main .banner img{
+    width: 100%;
+    display: block;
+}
+
+main .banner .texto{
+    position: absolute;
+    left: 10%;
+    bottom: 30px;
+    color: #FFFFFF;
+    width: 80%;
+}
+
+main .banner .texto h2{
+    font-size: 96px;
+    line-height: 100px;
+}
+
+main .banner .texto h2 .diferente{
+    color: #D31414;
+}
+
+main .banner .texto h4{
+    font-size: 36px;
+}
+
+/* HISTORIA */
+
+main .historia{
+    padding: 60px 20px;
+}
+
+main .historia h6{
+    font-family: 'Spicy Rice', cursive;
+    text-align: center;
+    font-size: 96px;
+    font-weight: normal;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+main .historia h6 .diferente{
+    color: #D31414;
+    font-family: 'Spicy Rice', cursive;
+}
+
+main .historia .blocos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+main .historia .bloco1,
+main .historia .bloco2{
+    width: 100%;
+    max-width: 600px;
+    min-height: 500px;
+    background-color: #D9D9D9;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 20px;
+}
+
+main .historia .bloco1{
+    padding: 50px;
+}
+
+main .historia .bloco2{
+    padding: 90px;
+}
+
+/* IMAGENS */
+
+main .historia .imgs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+main .historia .imgs .mascote{
+    width: 100%;
+    max-width: 600px;
+}
+
+main .historia .imgs .tecnico{
+    width: 100%;
+    max-width: 600px;
+    border-radius: 30px;
+}
+
+/* FOOTER */
+
+
+footer{
+    background-color: #2D963D;
+    margin-top: 60px;
+    display: flex;
+}
+
+footer img{
+    display: flex;
+}
+
+footer p{
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+footer p span{
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFDE21;
+    margin-top: 20px;
+}
+
+.copa{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 100px;
+    margin-left: -216px;
+}
+/* RESPONSIVO */
+
+@media (max-width: 1200px){
+
+    main .banner .texto h2{
+        font-size: 70px;
+        line-height: 75px;
+    }
+
+    main .banner .texto h4{
+        font-size: 28px;
+    }
+
+    main .historia h6{
+        font-size: 70px;
+    }
+
+    main .historia h6 .diferente{
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 900px){
+
+    header{
+        justify-content: center;
+        text-align: center;
+        padding: 20px 30px;
+    }
+
+    .logo{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .menu{
+        justify-content: center;
+        width: 100%;
+    }
+
+    main .banner .texto{
+        left: 5%;
+        width: 90%;
+        bottom: 20px;
+    }
+
+    main .banner .texto h2{
+        font-size: 55px;
+        line-height: 60px;
+    }
+
+    main .banner .texto h4{
+        font-size: 24px;
+    }
+
+    main .historia h6{
+        font-size: 55px;
+    }
+
+    main .historia h6 .diferente{
+        font-size: 55px;
+    }
+
+    main .historia .bloco1{
+        padding: 35px;
+    }
+
+    main .historia .bloco2{
+        padding: 35px;
+    }
+
+    footer p{
+        font-size: 30px;
+    }
+
+    footer p span{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 600px){
+
+    header{
+        padding: 20px;
+    }
+
+    .logo p{
+        font-size: 28px;
+    }
+
+    .menu{
+        gap: 15px;
+    }
+
+    .menu a{
+        font-size: 16px;
+        padding: 8px 18px;
+    }
+
+    main .banner .texto{
+        position: static;
+        width: 100%;
+        background-color: #2D963D;
+        padding: 20px;
+    }
+
+    main .banner .texto h2{
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    main .banner .texto h4{
+        font-size: 18px;
+    }
+
+    main .historia{
+        padding: 40px 15px;
+    }
+
+    main .historia h6{
+        font-size: 38px;
+    }
+
+    main .historia h6 .diferente{
+        font-size: 38px;
+    }
+
+    main .historia .bloco1,
+    main .historia .bloco2{
+        padding: 25px;
+        min-height: auto;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 25px 20px;
+        gap: 10px;
+    }
+
+    footer p{
+        font-size: 28px;
+        margin-top: 0;
+    }
+
+    footer p span{
+        font-size: 22px;
+    }
+
+    .copa{
+        font-size: 16px;
+        margin: 0;
+    }
+}
